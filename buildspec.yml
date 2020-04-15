@@ -50,6 +50,7 @@ phases:
       - mix phx.digest
       - mix release
       - cp appspec.yml  _build/prod/rel/hello/
+      - cp -R scripts  _build/prod/rel/hello/
   post_build:
     commands:
       - echo Entered the post_build phase...
